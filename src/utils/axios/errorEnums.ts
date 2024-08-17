@@ -1,0 +1,8 @@
+export enum ErrorsEnums {
+    UNAUTHORIZED = 401,
+    ACCESS_EXPIRED = 5000,
+    REFRESH_EXPIRED = 440,
+    NOT_FOUND = 5200,
+    NETWORK_ERROR = 'ERR_NETWORK',
+    VALIDATION_ERROR = 5070,
+}
