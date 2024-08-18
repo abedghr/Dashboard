@@ -23,8 +23,7 @@ export type CreateAdminBody = {
 export type Admin = {
     _id: string
     username: string
-    firstName: string
-    lastName: string
+    fullName: string
     mobileNumber: string
     email: string
     gender: ENUM_USER_GENDER

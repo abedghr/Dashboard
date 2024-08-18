@@ -129,11 +129,7 @@ function Main() {
                                         background="#f1f1f1"
                                         fontSize={32}
                                         fontWeight={400}
-                                        initials={`${admin.firstName &&
-                                            admin.firstName[0].toUpperCase()
-                                            }${admin.lastName &&
-                                            admin.lastName[0].toUpperCase()
-                                            }`}
+                                        initials={admin.fullName}
                                     />
                                 </div>
                                 <div className="mt-3 text-center lg:ml-2 lg:mr-auto lg:text-left lg:mt-0">
@@ -141,8 +137,7 @@ function Main() {
                                         {admin.username}
                                     </div>
                                     <div className="text-slate-500 text-xs mt-0.5 dark:text-slate-300">
-                                        Full Name : {admin.firstName}{' '}
-                                        {admin.lastName}
+                                        Full Name : {admin.fullName}
                                     </div>
                                     <div className="text-slate-500 text-xs mt-0.5 dark:text-slate-300">
                                         Mobile : {admin.mobileNumber}

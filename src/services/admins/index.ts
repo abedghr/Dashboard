@@ -52,8 +52,7 @@ export const createAdmin = async ({
     const roleName = 'admin';
     const response = await axios.post(`/v1/admin/user/create`, {
         username,
-        firstName,
-        lastName,
+        fullName: `${firstName} ${lastName}`,
         mobileNumber,
         role,
         password,

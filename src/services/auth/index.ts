@@ -14,7 +14,7 @@ export const loginUser = async ({ username, password }: LoginUserBody) => {
     const response = await axios.post<GenericServerResponse<LoginResponse>>(
         '/v1/auth/user/login',
         {
-            mobileNumber: username,
+            username,
             password,
             roleTypes,
         }
